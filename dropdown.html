@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            .dropdown-header {
+                background-color: red;
+                color:black;
+                padding: 5px;
+            }
+            .header-h1 {
+                padding-left: 1000px;
+            }
+            .navigation-bar {
+                background-color: gray;
+                padding: 10px;
+            }
+            .navigation-bar a {
+                display:inline-block;
+                color: white;
+                padding: 5px;
+                text-decoration: none;
+            }
+            .navigation-bar a:hover{
+                background-color:darkslategrey;
+                padding: 5px;
+            }
+            .dropdown {
+                position: relative;
+                display: inline-block;
+            }
+
+            .dropdown-content {
+                display: none;
+                position:absolute;
+                background-color:lightgray;
+            }
+
+            .dropdown-content a{
+                color:blue;
+            }
+            .dropdown:hover .dropdown-content {
+                display: block;
+            }
+        </style>
+    </head>
+    <body>
+        <header class="dropdown-header">
+            <h1 class="header-h1">Demo of Dropdown</h1>
+        </header>
+        <nav class="navigation-bar">   
+            <a href="#">Link 1</a>
+            <div class="dropdown">
+                <a href="#">Link 2</a>        
+                <div class="dropdown-content">
+                    <a href="#">DD_Link_1</a>
+                    <a href="#">DD_Link_2</a>
+                    <a href="#">DD_Link_3</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <a href="#">Link 3</a>        
+                <div class="dropdown-content">
+                    <a href="#">DD_Link_1</a>
+                    <a href="#">DD_Link_2</a>
+                    <a href="#">DD_Link_3</a>
+                </div>
+            </div>    
+        </nav>
+        
+    </body>
+</html>
